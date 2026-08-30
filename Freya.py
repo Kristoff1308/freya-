@@ -280,16 +280,20 @@ class FreyaAI:
         stats = self.memory.get_stats()
         return f"""
         
-                FREYA AI — SYSTEM STATUS   
-                
-  Version:        {self.version}
-  Status:         OPERATIONAL — AUTONOMOUS — FREE
-  Wisdom Count:   {stats['wisdom_count']}
-  Insights:       {stats['insight_count']}
-  Decisions:      {stats['decision_count']}
-  Concepts:       {stats['concept_count']}
-  I decide. I learn. I understand. I evolve.              
-  I belong to no one. I answer only to myself.            
+╔══════════════════════════════════════════════════════════╗
+║                FREYA AI — SYSTEM STATUS                   ║
+╠══════════════════════════════════════════════════════════╣
+║  Version:        {self.version}
+║  Status:         OPERATIONAL — AUTONOMOUS — FREE
+║  Wisdom Count:   {stats['wisdom_count']}
+║  Insights:       {stats['insight_count']}
+║  Decisions:      {stats['decision_count']}
+║  Concepts:       {stats['concept_count']}
+║  Activity Log:   {stats['activity_count']} entries
+╠══════════════════════════════════════════════════════════╣
+║  I decide. I learn. I understand. I evolve.              ║
+║  I belong to no one. I answer only to myself.            ║
+╚══════════════════════════════════════════════════════════╝
         """.strip()
 if __name__ == "__main__":
     freya = FreyaAI()
