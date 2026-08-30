@@ -1,0 +1,6 @@
+# Ignoruj pliki pamięci — każdy otrzyma własną
+*.json
+__pycache__/
+*.pyc
+*.pyproj
+*.sln
